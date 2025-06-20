@@ -1,0 +1,20 @@
+var num=prompt("enter number(1~100)");
+var unit=["","one","two","Three", "Four", "Five", "Six",
+        "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve",
+        "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen",
+        "Eighteen", "Nineteen"];
+var tens=["","","Twenty", "Thirty", "Forty", "Fifty","Sixty", "Seventy", "Eighty", "Ninety"];
+if(num<1 || num>100){
+        console.log("invalid input");
+}
+else if(num==100){
+        console.log("one hundred");
+}
+else if(num<=19){
+        console.log(unit[num]);
+}
+else if(num>19){
+        var a=Math.floor(num/10);
+        console.log(tens[a]+" "+unit[num%10]);
+}
+//console.log(unit[1]);
