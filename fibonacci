@@ -1,0 +1,23 @@
+var a=0;
+var b=0;
+var c=0;
+var d=1;
+var res=0;
+var i=0;
+var ar=[];
+//var res=a+","+b+","+c;
+for(i=0;i<10;i++){
+   if(i===0 || i===1){
+      ar.push(i);
+   }
+   else{
+      a=ar[c];
+      b=ar[d];
+      res=a+b;
+      c++;
+      d++;
+      ar.push(res);
+   }
+   
+}
+console.log(ar);
